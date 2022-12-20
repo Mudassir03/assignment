@@ -1,0 +1,57 @@
+.App{
+  margin-left:20px;
+
+}
+.card-wrap{
+  margin:20px 10px 20px 10px ;
+  background-color: rgba(0, 0, 0, 0);
+  display: inline-block;
+  
+
+}
+.card{
+  max-width: 340px;
+  border: 1px solid goldenrod;
+  transition: 500ms;
+}
+.card-img{
+  width: 320px;
+  padding: 10px;
+}
+.card-details{
+  padding: 0px 10px ;
+}
+.card:hover{
+  background-color: rgba(102, 101, 101, 0.089);
+  transition: 500ms;
+  box-shadow: 1px 1px 10px black;
+  border: 1px solid rgba(218, 165, 32, 0);
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+ 
+}
+.nav-btn{
+  margin-right: 20px;
+
+  background-color: rgb(117, 20, 207);
+  color: white;
+  border: 0px;
+  border-radius: 20px;
+  transition: 300ms;
+  cursor: pointer;
+}
+.nav-btn:hover{
+  background-color: rgb(93, 5, 174);
+  transition: 400ms;
+}
+.nav-btn>h3{
+  margin: 10px;
+
+}
+.navbar>h2>span{
+  color: red;
+}
