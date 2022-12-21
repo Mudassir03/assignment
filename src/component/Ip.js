@@ -19,9 +19,10 @@ function Ip() {
   }, [])
 
   return (
-    <div className="App">
-      <h2>Your IP Address is</h2>
-      <h4>{ip}</h4>
+    <div className="ip">
+      <p>Your IP Address is : <b> {ip}</b></p>
+      
+      
     </div>
   );
 }
