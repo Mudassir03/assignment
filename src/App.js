@@ -1,30 +1,26 @@
 import './App.css';
-import Card from './component/Card';
-import Details from './component/Details';
-import Navbar from './component/Navbar';
-import Crddata from './data/Crddata';
-import Ip from './component/Ip';
 
-function CardEntry(entry){
-  return(
-  <Card
-  key={entry.id}
-  image={entry.image}
-  price={entry.price}
-  address={entry.address}
-  about={entry.about}
-  
-  />
-  );
-}
+import Details from './component/Details';
+import Home from './component/Home';
+import Navbar from './component/Navbar';
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+
 
 
 function App() {
   return (
     <div className="App">
+      <BrowserRouter>
       <Navbar/>
-      <Ip/>
-      {Crddata.map(CardEntry)}
+      <Routes>
+        <Route path='/' element={<Home/>}></Route>
+        <Route path='/details' element={<Details/>}></Route>
+      </Routes>
+      </BrowserRouter>
+     
+      
       {/* <Details/> */}
       
       

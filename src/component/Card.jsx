@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 // import Details from './Details'
 
 
@@ -9,7 +10,7 @@ export default function Card(props) {
             <div className='card' >
                 
            
-           <img className='card-img' src={props.image} alt="" />
+          <Link to='/details'> <img className='card-img'  src={props.image} alt="" /></Link>
                 <div className='card-details'>
                 <p className='card-add'>{props.address}</p>
                 <p className='card-price'><b>{props.price}</b></p>
