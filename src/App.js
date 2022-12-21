@@ -16,6 +16,7 @@ function CardEntry(entry){
   );
 }
 
+
 function App() {
   return (
     <div className="App">
