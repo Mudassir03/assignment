@@ -59,7 +59,7 @@
 
 }
 .navbar>h2>span{
-  color: red;
+  color: rgb(255, 128, 0);
 }
 .navbar>h2{
   cursor: pointer;
