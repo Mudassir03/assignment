@@ -1,10 +1,43 @@
-import React from 'react'
+// import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+import Card from './Card'
+import Crddata from '../data/Crddata';
+
+
+function CardEntry(entry){
+  
+  return(
+  <Card
+  id={entry.id}
+  key={entry.id}
+  image={entry.image}
+  price={entry.price}
+  address={entry.address}
+  about={entry.about}
+  
+  />
+  
+  );
+ 
+}
+
+
+
+
 
 export default function Details() {
+
   return (
+    <>
+    <Link className='back-link' to='/'><button className='back-btn'><h3>Back</h3></button></Link>
+    
     <div className='details'>
-      <img className='dtl-img' src="https://img.gtsstatic.net/reno/imagereader.aspx?imageurl=https%3A%2F%2Fsir.azureedge.net%2F1253i215%2F8e31jb677jjrmnpyhcgf7pg171i215&option=N&permitphotoenlargement=false" alt="" />
+     {Crddata.map(CardEntry)}
+     
 
     </div>
+    
+    
+    </>
   )
 }
